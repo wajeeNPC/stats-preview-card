@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100vh;
+}
+.left {
+  max-width: 550px;
+  min-height: 415px;
+  color: white;
+  background-color: hsl(244, 38%, 16%);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 15px;
+  border:none;
+  border-radius:8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+p{
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.head p{
+  position: relative;
+  bottom:20px;
+  right:50px;
+  margin:0px 100px 0px 100px;
+}
+.head h1{
+  position: relative;
+  bottom:50px;
+  right:50px;
+  margin:0px 100px 0px 100px;
+}
+.right img{
+  width:100%;
+  height:100%;
+  border:none;
+  border-radius:8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.right{
+  width:550px;
+  height:415px;
+}
+.easy{
+  position: relative;
+  right: 110px;
+  top:50px;
+}
+.med{
+  position: relative;
+  right: 50px;
+  top:50px; 
+}
+.hard{
+  position: relative;
+  left:10px;
+  top:50px;
+}
+.text{
+  color: hsl(277, 64%, 61%) ;
+}
+p{
+  Font-size: 15px;
+  opacity: 0.5;
+}
+h2{
+  padding-bottom: 5px;
+}
+@media screen and (max-width:768px){
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left{
+    order: 2;
+    max-width:335px;
+    min-height: 600px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0px;
+    text-align: center;
+  }
+  .right{
+    order:1;
+    width:350px;
+    height:250px;
+  }
+  .right img{
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 0px;
+
+  }
+  .head h1{
+    margin:0px 30px 0px 0px;
+    position: relative;
+    left:5px;
+    bottom:70px;
+  }
+  .head p{
+    margin:0px 100px 0px 0px;
+    position: relative;
+    left:40px;
+    bottom:50px;
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .easy{
+    position: relative;
+    right:4px;
+    top:0px;
+  }
+  .med{
+    position: relative;
+    right:8px;
+    top:30px;
+  }
+  .hard{
+    position: relative;
+    left:-5px;
+    top:65px;
+  }
+}
